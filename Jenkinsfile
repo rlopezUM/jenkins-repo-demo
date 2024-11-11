@@ -19,7 +19,7 @@ pipeline {
         stage('Compile and Run Java') {
             steps {
                 sh 'javac src/main/java/HelloWorld.java'
-                sh 'java HelloWorld'
+                sh 'java src/main/java/HelloWorld'
             }
         }
     }
