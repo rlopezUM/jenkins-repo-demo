@@ -21,7 +21,9 @@ pipeline {
                 sh 'javac src/main/java/HelloWorld.java'
                 sh 'ls'
                 sh 'ls src/main/java'
-                sh 'java src/main/java/HelloWorld'
+                dir('src/main/java') {
+                    sh 'java HelloWorld'
+                }
             }
         }
     }
