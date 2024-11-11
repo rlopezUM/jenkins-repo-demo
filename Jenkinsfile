@@ -19,6 +19,8 @@ pipeline {
         stage('Compile and Run Java') {
             steps {
                 sh 'javac src/main/java/HelloWorld.java'
+                sh 'ls'
+                sh 'ls src/main/java'
                 sh 'java src/main/java/HelloWorld'
             }
         }
